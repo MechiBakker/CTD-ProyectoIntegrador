@@ -1,0 +1,54 @@
+.main-container {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.search-container {
+  grid-column: 2 / 8;
+  grid-row: 4 / 12;
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.5) 0%,rgba(0,0,0,0.8) 100%), url('https://blogmedia.dealerfire.com/wp-content/uploads/sites/1045/2020/10/many-cars-parked-view-of-front-bumpers-from-front-side-with-sky-background-E5_b.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.title-main {
+  color: #f0d278;
+  font-size: 40px;
+}
+
+.section-item {
+  text-align: left;
+  padding: 20px;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.add-button {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  background-color: #ddb853;
+  color: white;
+  font-weight: 600;
+  font-size: 20px;
+  border-radius: 50%;
+  border: none;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.vehicles-section {
+  margin-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+}
+
+.categories-section {
+  display: flex;
+  flex-direction: column;
+}

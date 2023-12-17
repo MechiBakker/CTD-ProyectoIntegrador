@@ -1,0 +1,58 @@
+.date-range {
+  display: flex;
+  align-items: center;
+  border: 1px solid rgb(204, 204, 204);
+  padding: 0 10px;
+  background-color: white;
+  gap: 5px;
+}
+
+.nice-dates {
+  width: 100%;
+}
+
+.calendar-icon {
+  color: #CBB26A;
+}
+
+.arrow-icon {
+  color: rgb(180, 177, 177);
+}
+
+.input {
+  color: rgb(172, 172, 172);
+  padding: 6px;
+  margin: 0;
+}
+
+.nice-dates-popover {
+  max-width: 300px !important;
+}
+
+.nice-dates-day {
+  height: 30px !important;
+}
+
+.nice-dates-day::before {
+  background-color: #CBB26A;
+}
+
+.nice-dates-grid {
+  height: 150px !important;
+}
+
+.nice-dates-navigation_current {
+  color: #CBB26A;
+}
+
+.nice-dates-week-header_day {
+  color: #CBB26A;
+  font-weight: 600;
+
+}
+
+.nice-dates-navigation_previous:before,
+.nice-dates-navigation_next:before {
+  border-right: 2px solid #CBB26A;
+  border-top: 2px solid #CBB26A;
+}

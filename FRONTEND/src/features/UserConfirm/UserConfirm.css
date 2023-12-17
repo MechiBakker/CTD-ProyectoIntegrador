@@ -1,0 +1,38 @@
+.container-confirmation {
+  padding: 40px 40px 0 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+
+}
+.email-container {
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+}
+
+.confirmation-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 30px;
+}
+
+.confirmation-txt {
+  white-space: pre-line;
+}
+
+.confirmation-button {
+  padding: 20px;
+  width: 100%;
+  background-color: #BE9E44;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.confirmation-image-container {
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px;
+}

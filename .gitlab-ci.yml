@@ -1,0 +1,78 @@
+build_backend_QA-2:
+  stage: build
+  image: andrejentzsch/maven_java_opencv_tesseract
+  script:
+    - rm -rf FRONTEND
+    - cd BACKEND/roadRunner
+    - if [ ! -f mvnw ]; then mvn wrapper:wrapper; fi
+    - mvn clean package -DskipTests
+    - mv target/roadRunner-0.0.1-SNAPSHOT.jar $CI_PROJECT_DIR/roadRunner-0.0.1-SNAPSHOT-QA-2.jar
+
+    - cd $CI_PROJECT_DIR
+    - apt-get update && apt-get install openssh-server -y
+    - mkdir -p ~/.ssh
+    - echo "La ruta de SSH es ~/.ssh"
+
+    - eval $(ssh-agent -s)
+    - echo "$PRIVATE_KEY" > private_key.pem
+    - chmod 600 private_key.pem
+    
+    - echo "permiso 600 realizado"
+    - ls
+    - ssh-keyscan -H ec2-3-129-10-204.us-east-2.compute.amazonaws.com >> ~/.ssh/known_hosts
+    - scp -i private_key.pem roadRunner-0.0.1-SNAPSHOT-QA-2.jar ubuntu@ec2-3-129-10-204.us-east-2.compute.amazonaws.com:/home/ubuntu/QA-2
+    - ssh -i private_key.pem ubuntu@ec2-3-129-10-204.us-east-2.compute.amazonaws.com "sudo systemctl restart roadRunnersBack-QA-2.service"
+ 
+variables:
+  AWS_ACCESS_KEY_ID: $AWS_ACCESS_KEY_ID
+  AWS_SECRET_ACCESS_KEY: $AWS_SECRET_ACCESS_KEY
+  AWS_DEFAULT_REGION: $AWS_DEFAULT_REGION
+
+
+build_frontend:
+  stage: build
+  image: node:16.5.0
+  script:
+    - echo "Building the app"
+    - cd FRONTEND/
+    - ls
+    - npm install
+    - echo "dependencias instaladas"
+    - npm run build
+    - ls
+  artifacts:
+    name: react_build
+    paths: 
+      - FRONTEND/dist/
+
+ 
+deploy_front_to_s3:
+  stage: deploy
+  image: python:3.9.7
+
+  before_script:
+    - apt-get update && apt-get install -y awscli
+
+  script:
+    - apt-get update
+    - apt-get upgrade -y
+    - apt-get install -y python3-pip
+    - pip install --upgrade pip
+    - curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+    - unzip awscliv2.zip
+    - ./aws/install
+    - aws --version
+    - pwd
+    - ls
+    - cd FRONTEND
+    - ls
+    - echo $AWS_ACCESS_KEY_ID
+    - aws configure set aws_access_key_id $AWS_ACCESS_KEY_ID --profile default
+    - aws configure set aws_secret_access_key $AWS_SECRET_ACCESS_KEY --profile default
+    - AWS_DEFAULT_REGION=us-east-2 aws s3 sync dist/ s3://roadrunners-app
+   
+    - echo "Finishhed!! Se ha enviado al bucket s3 el directorio ./dist"
+
+
+
+ 

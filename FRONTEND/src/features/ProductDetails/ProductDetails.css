@@ -1,0 +1,247 @@
+.product-detail {
+  padding: 20px;
+}
+
+.image-container-general {
+  display: grid;
+  align-content: center;
+  grid-template-columns: repeat(3, minmax(240px, 1fr));
+  grid-auto-rows: 200px;
+  gap: 10px;
+  margin: 0 5%;
+}
+
+.containProduct {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.7);
+  border-radius: 0.3rem;
+}
+
+.item1 {
+  grid-row: 1 / 3;
+}
+
+.imagen-producto {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.details-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 2%;
+  padding-left: 5%;
+}
+
+.product-model {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  width: 95%;
+  padding: 0, 10px;
+}
+
+.product-model h1{
+  font-size: larger;
+  color: #BE9E44;
+  padding-bottom: 12%;
+  margin-left: 10px;
+}
+.product-model p {
+  color: #BE9E44;
+  font-weight: bold;
+  font-size: larger;
+  margin-right: 25px;
+}
+
+.separation-line {
+  width: 95%;
+  height: 2px;
+  background-color:#BE9E44;
+}
+
+
+.price {
+  font-weight: bolder;
+  font-size: larger;
+  padding-left: 5%;
+  color: #4f4f50;
+}
+
+.characteristics-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 5%;
+  margin-right: 5%;
+
+}
+
+.title-characteristics {
+  color:  #4f4f50;
+  text-decoration: underline;
+  padding-bottom: 70px;
+  padding-top: 25px;
+}
+
+
+.cards-characteristics {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.characteristic {
+  font-size: larger;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  height: 60px;
+  align-items: center;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  background-color: #4f4f5015;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
+  padding: 10px;
+  transition: transform 0.3s ease;
+}
+
+.characteristic:hover {
+  transform: scale(1.1);
+}
+
+.icon {
+  color: #4f4f50;
+  padding-left: 8%;
+  padding-right: 8%;
+
+}
+
+.containeReserva{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 40px;
+    width: 50%;
+    padding: 10px 20px 0;
+    background-color: #BE9E44;
+    border-radius: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.titleReserva{
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+}
+.crear-reserva{
+  background-color: white;
+  color: #BE9E44;
+  width: 40%;
+  margin: 30px 0;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.7);
+}
+
+.name-characteristic {
+  color: #cbb26a;
+  margin: 0;
+}
+.description{
+  color: #4f4f50;
+  font-size: 13px;
+  padding: 0;
+  margin: 0;
+}
+
+.modalBooking{
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding: 20px 20px;
+  
+  
+}
+
+.confirmationdBooking{
+
+  font-weight: bold;
+  color: #BE9E44;
+}
+
+.calculatedBooking{
+  color: #cbb26a;
+  font-weight: bold;
+  font-size: 30px;
+}
+.label1{
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.ant-picker-panel-container button {
+  width: 23px;
+}
+
+.bookingSave{
+
+  font-size: 15px;
+  color:  #4f4f50;
+
+}
+
+
+/* Estilos para pantallas de telÃ©fono */
+
+@media (max-width: 480px) {
+  .image-container {
+    height: 200px;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .details-container {
+    padding-left: 2%;
+  }
+
+  .characteristics-container {
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+
+  .cards-characteristics {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Estilos para pantallas de tablet */
+@media (min-width: 481px) and (max-width: 800px) {
+  .image-container {
+    height: 300px;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .details-container {
+    padding-left: 3%;
+  }
+
+  .characteristics-container {
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+
+  .cards-characteristics {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

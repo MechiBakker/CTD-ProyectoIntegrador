@@ -1,0 +1,81 @@
+.formCategory {
+    width: 50%;
+    margin: 0 auto;
+    background-color: #ffffff;
+    color: #F2F2F2;
+    padding: 20px;
+  }
+  
+  .create-category {
+    color: #BE9E44;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .error-msg {
+    background-color: #db6f6f;
+    color: white;
+    font-weight: 500;
+    margin: 0;
+    padding: 15px;
+    text-align: left;
+  }
+  
+  .success-msg {
+    background-color: #a2dd84;
+    color: white;
+    font-weight: 500;
+    margin: 0;
+    padding: 15px;
+    text-align: left;
+  }
+  
+  .label-input {
+    color: #F2F2F2;
+  }
+  
+  .input-data {
+    background-color: #4F4F50;
+    color: #F2F2F2;
+    border: none;
+    padding: 4px;
+  }
+  
+  .btn {
+    background-color: #BE9E44;
+    color: #F2F2F2;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background-color: #BE9E44;
+    opacity: 0.8;
+  }
+  
+  .camera-icon {
+    color: #BE9E44;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .submit-category {
+    background-color: #BE9E44;
+    color: #F2F2F2;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .submit-category:hover {
+    background-color: #BE9E44;
+    opacity: 0.8;
+  }
+  
+  .img-modal-preview {
+    width: 100%;
+    height: auto;
+  }
+  
+ 

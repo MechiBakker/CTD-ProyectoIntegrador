@@ -1,0 +1,33 @@
+.vehicles-list {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  padding: 20px;
+  row-gap: 10px;
+  column-gap: 10px ;
+  background-color: rgb(235, 234, 234);
+}
+
+@media (max-width: 1800px) {
+  .vehicles-list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 1500px) {
+  .vehicles-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 1200px) {
+  .vehicles-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+@media (max-width: 900px) {
+  .vehicles-list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

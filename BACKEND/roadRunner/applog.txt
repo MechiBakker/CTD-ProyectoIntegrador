@@ -1,0 +1,35 @@
+INFO    2023-05-16 21:39:55,288 [http-nio-8080-exec-2] com.dh.equipo2.roadRunner.domain.Vehicle  - Se a creado con exito el nuevo vehículo
+INFO    2023-05-16 21:40:10,082 [http-nio-8080-exec-4] com.dh.equipo2.roadRunner.domain.Vehicle  - Se ha eliminado exitosamente el vehículo con nombre: Mercedes
+ERROR   2023-05-16 21:40:14,895 [http-nio-8080-exec-5] com.dh.equipo2.roadRunner.domain.Vehicle  - Lo siento, pero no contamos con un vehículo de nombre: Mercedes
+INFO    2023-05-17 00:42:39,504 [http-nio-8080-exec-1] com.dh.equipo2.roadRunner.domain.Vehicle  - Se a creado con exito el nuevo vehículo
+INFO    2023-05-17 00:43:13,586 [http-nio-8080-exec-4] com.dh.equipo2.roadRunner.domain.Vehicle  - Se a creado con exito el nuevo vehículo
+INFO    2023-05-17 00:43:20,339 [http-nio-8080-exec-5] com.dh.equipo2.roadRunner.domain.Vehicle  - Se a creado con exito el nuevo vehículo
+INFO    2023-05-17 00:43:24,974 [http-nio-8080-exec-6] com.dh.equipo2.roadRunner.domain.Vehicle  - Se a creado con exito el nuevo vehículo
+INFO    2023-05-17 00:43:34,335 [http-nio-8080-exec-7] com.dh.equipo2.roadRunner.domain.Vehicle  - Se a creado con exito el nuevo vehículo
+INFO    2023-05-17 00:43:39,136 [http-nio-8080-exec-8] com.dh.equipo2.roadRunner.domain.Vehicle  - Se a creado con exito el nuevo vehículo
+INFO    2023-05-17 21:47:41,948 [http-nio-8080-exec-8] com.dh.equipo2.roadRunner.domain.Vehicle  - Se a creado con exito el nuevo vehículo
+INFO    2023-05-17 22:07:37,927 [http-nio-8080-exec-2] com.dh.equipo2.roadRunner.domain.Vehicle  - Se a creado con exito el nuevo vehículo
+INFO    2023-05-17 22:14:53,823 [http-nio-8080-exec-2] com.dh.equipo2.roadRunner.domain.Vehicle  - Se a creado con exito el nuevo vehículo
+ERROR   2023-05-17 22:15:49,230 [http-nio-8080-exec-5] com.dh.equipo2.roadRunner.domain.Vehicle  - El vehìculo con nombreDayanaya existe
+INFO    2023-05-17 22:16:04,477 [http-nio-8080-exec-6] com.dh.equipo2.roadRunner.domain.Vehicle  - Se a creado con exito el nuevo vehículo
+INFO    2023-05-17 22:18:28,089 [http-nio-8080-exec-10] com.dh.equipo2.roadRunner.domain.Vehicle  - Se a creado con exito el nuevo vehículo
+INFO    2023-05-17 22:30:29,111 [http-nio-8080-exec-2] com.dh.equipo2.roadRunner.domain.Vehicle  - Se a creado con exito el nuevo vehículo
+ERROR   2023-05-17 22:33:10,700 [http-nio-8080-exec-5] com.dh.equipo2.roadRunner.domain.Vehicle  - El vehìculo con nombreJohnya existe
+INFO    2023-05-17 22:33:42,383 [http-nio-8080-exec-6] com.dh.equipo2.roadRunner.domain.Vehicle  - Se a creado con exito el nuevo vehículo
+INFO    2023-05-17 22:33:49,065 [http-nio-8080-exec-8] com.dh.equipo2.roadRunner.domain.Vehicle  - Se a creado con exito el nuevo vehículo
+INFO    2023-05-17 22:33:53,980 [http-nio-8080-exec-9] com.dh.equipo2.roadRunner.domain.Vehicle  - Se a creado con exito el nuevo vehículo
+INFO    2023-05-17 22:33:58,685 [http-nio-8080-exec-2] com.dh.equipo2.roadRunner.domain.Vehicle  - Se a creado con exito el nuevo vehículo
+INFO    2023-05-17 22:34:03,297 [http-nio-8080-exec-1] com.dh.equipo2.roadRunner.domain.Vehicle  - Se a creado con exito el nuevo vehículo
+INFO    2023-05-17 22:34:08,232 [http-nio-8080-exec-4] com.dh.equipo2.roadRunner.domain.Vehicle  - Se a creado con exito el nuevo vehículo
+INFO    2023-05-17 22:34:12,732 [http-nio-8080-exec-5] com.dh.equipo2.roadRunner.domain.Vehicle  - Se a creado con exito el nuevo vehículo
+INFO    2023-05-17 22:34:16,751 [http-nio-8080-exec-6] com.dh.equipo2.roadRunner.domain.Vehicle  - Se a creado con exito el nuevo vehículo
+INFO    2023-05-17 22:35:05,280 [http-nio-8080-exec-10] com.dh.equipo2.roadRunner.domain.Vehicle  - Se a creado con exito el nuevo vehículo
+INFO    2023-05-17 22:35:09,689 [http-nio-8080-exec-1] com.dh.equipo2.roadRunner.domain.Vehicle  - Se a creado con exito el nuevo vehículo
+ERROR   2023-05-18 00:12:59,586 [http-nio-8080-exec-10] com.dh.equipo2.roadRunner.domain.Vehicle  - Lo siento, pero no contamos con un vehículo de nombre: save
+ERROR   2023-05-18 00:16:19,162 [http-nio-8080-exec-4] com.dh.equipo2.roadRunner.domain.Vehicle  - Lo siento, pero no contamos con un vehículo de nombre: save
+ERROR   2023-05-18 00:16:23,119 [http-nio-8080-exec-7] com.dh.equipo2.roadRunner.domain.Vehicle  - Lo siento, pero no contamos con un vehículo de nombre: save
+INFO    2023-05-18 00:23:35,507 [http-nio-8080-exec-5] com.dh.equipo2.roadRunner.domain.Vehicle  - Se a creado con exito el nuevo vehículo
+INFO    2023-05-18 00:25:06,015 [http-nio-8080-exec-6] com.dh.equipo2.roadRunner.domain.Vehicle  - Se a creado con exito el nuevo vehículo
+INFO    2023-05-18 00:35:07,896 [http-nio-8080-exec-9] com.dh.equipo2.roadRunner.domain.Vehicle  - Se a creado con exito el nuevo vehículo
+INFO    2023-05-18 00:41:59,620 [http-nio-8080-exec-5] com.dh.equipo2.roadRunner.domain.Vehicle  - Se a creado con exito el nuevo vehículo
+INFO    2023-05-24 20:41:21,957 [http-nio-8080-exec-3] com.dh.equipo2.roadRunner.domain.Vehicle  - Se a creado con exito el nuevo vehículo

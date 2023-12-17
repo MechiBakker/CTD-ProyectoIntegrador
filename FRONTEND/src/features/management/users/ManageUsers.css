@@ -1,0 +1,40 @@
+.header-manage-users {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+.manage-users-button {
+  width: 100px;
+}
+
+.manage-users-container {
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.header-title {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.manage-users-action {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.manage-users-select {
+  display: block !important;
+  box-shadow: none;
+  height: 20px;
+  width: 20px !important;
+}
+
+.manage-users-button[disabled] {
+  cursor: not-allowed;
+  background-color: rgb(221, 221, 221);
+}
